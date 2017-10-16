@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cinta"
+        android:layout_width="420dp"
+        android:layout_height="220dp"
+        android:id="@+id/imgcinta" />
+
+    <ImageView
+        android:src="@drawable/corona"
+        android:layout_width="100dp"
+        android:layout_height="220dp"
+        android:id="@+id/coronaIZQ"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/coronaCENT" />
+
+    <Button
+        android:background="@drawable/fondo_boton"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/btnIZQ"
+        android:text="IZQ"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_width="120dp"
+        android:layout_height="80dp" />
+
+    <ImageView
+        android:src="@drawable/corona"
+        android:layout_width="100dp"
+        android:layout_height="220dp"
+        android:id="@+id/coronaCENT"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:background="@drawable/fondo_boton"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnCENT"
+        android:text="CENTRO"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_width="120dp"
+        android:layout_height="80dp" />
+
+    <ImageView
+        android:src="@drawable/corona"
+        android:layout_width="100dp"
+        android:layout_height="220dp"
+        android:id="@+id/coronaDER"
+        android:layout_alignBottom="@+id/imgcinta"
+        android:layout_toEndOf="@+id/coronaCENT"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:background="@drawable/fondo_boton"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnDER"
+        android:text="DER"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_width="120dp"
+        android:layout_height="80dp" />
+
+</RelativeLayout>
